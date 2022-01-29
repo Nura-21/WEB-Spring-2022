@@ -1,1 +1,1 @@
-"# WEB-Spring-2022" 
+Repository of WEB Course at KBTU. Spring, 2022.
