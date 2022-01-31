@@ -1,2 +1,14 @@
 <!DOCTYPE html> - Type defining .html file
-<!DOCTYPE >
+<link rel="stylesheet" href="style.css"> - link to CSS before <title>
+<h1>, <h2> - Sized Texts
+<p> </p> - paragraph
+<p id = "p1"> - paragraph with id, (single object)
+<p class = "texts"> - paragraph with class(can be multiple paragraphs with same class)
+<em> </em> - cursive text
+<strong> </strong> - bold text
+<ul> </ul> - listed with dots
+<ol> </ol> - listed with numbers
+<li> </li> - text element in lists
+<img src = "link to picture">
+<img alt = "the alternative text if your picture doesn't appear correctly">
+<img width = "some coefficent"> - change size of picture
