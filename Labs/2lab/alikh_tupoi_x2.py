@@ -1,1 +1,0 @@
-print("Tupoi x2")
