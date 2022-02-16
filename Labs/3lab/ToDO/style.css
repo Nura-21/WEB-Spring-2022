@@ -39,6 +39,7 @@ header p a{
 #paragraph{
     font-size: 36px;
     margin-bottom: 30px;
+    cursor: default;
 }
 
 .input-box{
