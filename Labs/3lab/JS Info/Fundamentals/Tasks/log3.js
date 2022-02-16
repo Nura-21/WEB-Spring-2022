@@ -1,0 +1,1 @@
+alert( 1 && null && 2 ); // res - null, because it's the first falsy vaue from the list

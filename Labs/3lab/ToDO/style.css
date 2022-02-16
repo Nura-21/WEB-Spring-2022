@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: courier;
+    font-weight: bold;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(40, 40, 40)
+}
+
+header p{
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+header p a{
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+    user-select: none;
+}
+
+.main{
+    margin-top: 60px;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: center;
+}
+
+#paragraph{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    margin-left: 50px;
+    display:flex;
+    flex-direction: row;
+}
+
+.input-box input{
+    font-family: courier;
+    font-weight: bold;
+    width: 90%;
+    height: 35px;
+    margin-right: 20px; 
+    padding-left: 10px;
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid rgb(75, 75, 75);
+    user-select: none;
+}
+
+.input-box input:focus{
+    border-style: none;
+}
+
+.input-box button{
+    font-family: courier;
+    font-weight: bold;
+    font-size: 32px;
+    background: rgb(33, 148, 194);
+    color: white;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.input-box button:hover{
+    background: rgb(29, 128, 167);
+}
+
+.list{
+    margin-top: 40px;
+}
+
+.list .task{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid rgb(170, 170, 170);
+    margin-bottom: 2px;
+}
+
+.list .task input{
+    margin-left: 40px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.list .task input:checked + p{
+    text-decoration: line-through;
+}
+
+.list .task .new{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list .task .new p{
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.list .task img{
+    height: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    user-select: none;
+}
