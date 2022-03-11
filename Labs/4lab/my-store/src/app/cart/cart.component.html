@@ -1,0 +1,20 @@
+<p id = "p1">
+    <a routerLink="/shipping">Shipping Prices</a>
+</p>
+<p id="page_p">Cart : {{getSum() | currency}}</p>
+<div class="cart_page">
+    <div class="cart">
+        <div class="cart-item" *ngFor="let item of items">
+            <div class="product">
+                <img [src]="item.imgLink" [alt]="item.name">
+                <a [href]="item.link">
+                    {{item.name}}
+                </a>
+                <b>{{item.price | currency}}</b>
+                <p>
+                    {{item.desc}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

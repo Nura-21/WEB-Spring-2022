@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+:host::after {
+  content: "";
+  flex: auto;
+}
+
+:host{
+  margin-left: 3%;
+  width: 95%;
+}

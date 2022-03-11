@@ -1,0 +1,21 @@
+<div class="product">
+  <img [src]="product.imgLink" [alt]="product.name">
+
+  <a [href]="product.link">
+    {{product.name}}
+  </a>
+  <p>
+    {{product.desc}}
+  </p>
+
+  <div>
+    <span class="material-icons" *ngFor="let i of [].constructor(getRating())"
+      [title]="'Rating ' + product.rate">star_rate
+    </span>
+  </div>
+
+  <div class="action">
+    <a class="share-btn" [href]="getShareLink()" title="Link through Telegram">Share</a>
+    <button type="button" (click)="addToCart(product)">Buy</button>
+  </div>
+</div>
