@@ -1,0 +1,225 @@
+export interface Product{
+  name: string;
+  link: string;
+  imgLink: string;
+  desc: string;
+  price: number;
+  rate: number;
+  likes: number;
+  catId: number;
+
+  // constructor(data: any){
+  //   this.name = data?.name || "";
+  //   this.link = data?.link || "";
+  //   this.imgLink = data?.imgLink || "";
+  //   this.desc = data?.desc || "";
+  //   this.rate = data?.rate || 0;
+  //   this.price = data?.price || 0;
+  //   this.likes = data?.likes || 0;
+  // }
+}
+
+
+export const products = 
+[
+  {
+    "name": "Samsung Galaxy S21 FE",
+    "link": "https://www.amazon.com/Samsung-Factory-Unlocked-Smartphone-Intelligent/dp/B09BFSTTNK/ref=sr_1_3?crid=26MKRYVT0EMSO&keywords=phones&qid=1647028141&sprefix=%2Caps%2C218&sr=8-3&th=1",
+    "imgLink": "https://m.media-amazon.com/images/I/61pP6pemX3L._AC_SL1500_.jpg",
+    "desc": "5G Cell Phone, Factory Unlocked Android Smartphone, 128GB, 120Hz Display, Pro Grade Camera, All Day Intelligent Battery, US Version, Olive",
+    "price": 899,
+    "rate": 4.6,
+    "likes": 0,
+    "catId": 1
+  },
+  {
+    "name": "Google Pixel 6 Pro",
+    "link": "https://www.amazon.com/Google-Pixel-Pro-Smartphone-Telephoto/dp/B09HZH2VJH/ref=sr_1_2?crid=26MKRYVT0EMSO&keywords=phones&qid=1647028141&sprefix=%2Caps%2C218&sr=8-2&th=1",
+    "imgLink": "https://m.media-amazon.com/images/I/71SGl7xwR-L._AC_SL1500_.jpg",
+    "desc": "5G Android Phone - Unlocked Smartphone with Advanced Pixel Camera and Telephoto Lens - 128GB - Cloudy White",
+    "price": 1099,
+    "rate": 4.1,
+    "likes": 0,
+    "catId": 1
+  },
+  {
+    "name": "Apple iPhone 11 Pro",
+    "link": "https://www.amazon.com/Apple-iPhone-256GB-Midnight-Green/dp/B08BHXC5ZS/ref=sr_1_1?crid=29VBVAZJ7BRXS&keywords=iphone&qid=1647028535&sprefix=ip%2Caps%2C282&sr=8-1",
+    "imgLink": "https://m.media-amazon.com/images/I/81AaNJqE+wS._AC_SL1500_.jpg",
+    "desc": "256GB, Midnight Green - Fully Unlocked (Renewed Premium)",
+    "price": 999,
+    "rate": 4.4,
+    "likes": 0,
+    "catId": 1
+  },
+  {
+    "name": "Apple iPhone 12 Pro",
+    "link": "https://www.amazon.com/Apple-iPhone-12-Pro-Pacific/dp/B09JFNMBWL/ref=sr_1_2?crid=29VBVAZJ7BRXS&keywords=iphone&qid=1647028535&sprefix=ip%2Caps%2C282&sr=8-2",
+    "imgLink": "https://m.media-amazon.com/images/I/712yl2wTDbL._AC_SL1500_.jpg",
+    "desc": "128GB, Pacific Blue - Unlocked (Renewed Premium)",
+    "price": 1199,
+    "rate": 3.7,
+    "likes": 0,
+    "catId": 1
+  },
+  {
+    "name": "Apple iPhone 12 Pro",
+    "link": "https://www.amazon.com/Apple-iPhone-12-Pro-256GB/dp/B09JFJ1Q5C/ref=sr_1_9?crid=29VBVAZJ7BRXS&keywords=iphone&qid=1647028677&sprefix=ip%2Caps%2C282&sr=8-9",
+    "imgLink": "https://m.media-amazon.com/images/I/711PvTS05pL._AC_SL1500_.jpg",
+    "desc": "256GB, Gold - Unlocked (Renewed Premium)",
+    "price": 1199,
+    "rate": 4.2,
+    "likes": 0,
+    "catId": 1
+  },
+  {
+    "name": "MSI GS76 Stealth Gaming Laptop",
+    "link": "https://www.amazon.com/MSI-GS76-Stealth-Gaming-Laptop/dp/B095B9PCPC/ref=sr_1_1?crid=2J6W3OG5VDDVJ&keywords=laptop&qid=1647028758&sprefix=laptop%2Caps%2C302&sr=8-1",
+    "imgLink": "https://m.media-amazon.com/images/I/619SIswN2hL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "17.3 240Hz FHD 1080p Display, Intel Core i7-11800H, NVIDIA GeForce RTX 3060, 16GB, 512GB SSD, Thunderbolt 4, WiFi 6, Win10, Black (11UE-221)",
+    "price": 1299,
+    "rate": 5,
+    "likes": 0,
+    "catId": 2
+  },
+  {
+    "name": "Acer Aspire 5 A515-46-R3UB",
+    "link": "https://www.amazon.com/Acer-A515-46-R3UB-Display-Quad-Core-Processor/dp/B09HVC79PC/ref=sr_1_2?crid=2J6W3OG5VDDVJ&keywords=laptop&qid=1647028758&sprefix=laptop%2Caps%2C302&sr=8-2",
+    "imgLink": "https://m.media-amazon.com/images/I/7189iXimfWL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "15.6 Full HD IPS Display | AMD Ryzen 3 3350U Quad-Core Mobile Processor | 4GB DDR4 | 128GB NVMe SSD | WiFi 6 | Backlit KB | FPR | Amazon Alexa | Windows 11 Home in S mode",
+    "price": 399,
+    "rate": 4.6,
+    "likes": 0,
+    "catId": 2
+  },
+  {
+    "name": "Lenovo Legion 5",
+    "link": "https://www.amazon.com/Lenovo-Legion-Gaming-GeForce-Windows/dp/B09QM3QXV6/ref=sr_1_4?crid=2J6W3OG5VDDVJ&keywords=laptop&qid=1647028758&sprefix=laptop%2Caps%2C302&sr=8-4",
+    "imgLink": "https://m.media-amazon.com/images/I/41fsa-4oYhL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "17.3 FHD Gaming Laptop, AMD Ryzen 5 5600H(up to 4.2GHz), 16GB RAM 1TB NVMe SSD, GeForce GTX 1650, Windows 11",
+    "price": 1199,
+    "rate": 4.8,
+    "likes": 0,
+    "catId": 2
+  },
+  {
+    "name": "HP Chromebook",
+    "link": "https://www.amazon.com/HP-Chromebook-11-inch-Laptop-11a-na0010nr/dp/B08HJT1BKQ/ref=sr_1_7?crid=2J6W3OG5VDDVJ&keywords=laptop&qid=1647028758&sprefix=laptop%2Caps%2C302&sr=8-7",
+    "imgLink": "https://m.media-amazon.com/images/I/81EY2GIfktL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "11-inch Laptop - MediaTek - MT8183 - 4 GB RAM - 32 GB eMMC Storage - 11.6-inch HD Display - with Chrome OS™ - (11a-na0010nr, 2020 Model)",
+    "price": 699,
+    "rate": 4.5,
+    "likes": 0,
+    "catId": 2
+  },
+  {
+    "name": "Samsung Galaxy Book Pro",
+    "link": "https://www.amazon.com/Samsung-Platform-Computer-Processor-Long-Lasting/dp/B09D8R361X/ref=sr_1_10?crid=2J6W3OG5VDDVJ&keywords=laptop&qid=1647028758&sprefix=laptop%2Caps%2C302&sr=8-10",
+    "imgLink": "https://m.media-amazon.com/images/I/81OivyiwCjL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Windows 11 Intel Evo Platform Laptop Computer 15.6 AMOLED Screen 11th Gen Intel Core i5 Processor 8GB Memory 512GB SSD Long-Lasting Battery, Mystic Blue",
+    "price": 799,
+    "rate": 4.4,
+    "likes": 0,
+    "catId": 2
+  },
+  {
+    "name": "Logitech G Pro",
+    "link": "https://www.amazon.com/Logitech-Wireless-Gaming-Esports-Performance/dp/B07GCKQD77/ref=sr_1_9?crid=4CFHKTNRAEFI&keywords=logitech+mouse&qid=1647028991&sprefix=logitech+%2Caps%2C438&sr=8-9",
+    "imgLink": "https://m.media-amazon.com/images/I/51ySu55JzAL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Made with and for Pro Gamers: G Pro Wireless Gaming Mouse is the result of two years of work with professional esports gamers, combing advanced technologies in an ultra-lightweight design",
+    "price": 79,
+    "rate": 4.7,
+    "likes": 0,
+    "catId": 3
+  },
+  {
+    "name": "Logitech G403 Hero",
+    "link": "https://www.amazon.com/Logitech-G403-Hero-Gaming-Mouse/dp/B07L4LRCXN/ref=sr_1_21?crid=4CFHKTNRAEFI&keywords=logitech%2Bmouse&qid=1647029055&sprefix=logitech%2B%2Caps%2C438&sr=8-21&th=1",
+    "imgLink": "https://m.media-amazon.com/images/I/51b6brP4S+L._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "25K Gaming Mouse, Lightsync RGB, Lightweight 87G+10G optional, Braided Cable, 25, 600 DPI, Rubber Side Grips",
+    "price": 44,
+    "rate": 4.6,
+    "likes": 0,
+    "catId": 3
+  },
+  {
+    "name": "Razer Basilisk V3",
+    "link": "https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A09196531967145RES1FQ&url=%2FRazer-Basilisk-Customizable-Ergonomic-Gaming%2Fdp%2FB09C13PZX7%2Fref%3Dsr_1_1_sspa%3Fcrid%3D2SG65IU66N7OR%26keywords%3Drazer%2Bmouse%26qid%3D1647029103%26sprefix%3Draz%2Bmouse%252Caps%252C722%26sr%3D8-1-spons%26psc%3D1&qualifier=1647029103&id=3149246781626483&widgetName=sp_atf",
+    "imgLink": "https://m.media-amazon.com/images/I/61JKqNxaZkL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Customizable Ergonomic Gaming Mouse: Fastest Gaming Mouse Switch - Chroma RGB Lighting - 26K DPI Optical Sensor - 11 Programmable Buttons - HyperScroll Tilt Wheel - Classic Black",
+    "price": 64,
+    "rate": 4.7,
+    "likes": 0,
+    "catId": 3
+  },
+  {
+    "name": "Razer DeathAdder V2",
+    "link": "https://www.amazon.com/Razer-DeathAdder-Gaming-Mouse-Programmable/dp/B082G5SPR5/ref=sr_1_3?crid=2SG65IU66N7OR&keywords=razer+mouse&qid=1647029103&sprefix=raz+mouse%2Caps%2C722&sr=8-3",
+    "imgLink": "https://m.media-amazon.com/images/I/61doJ9AKCPL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Gaming Mouse: 20K DPI Optical Sensor - Fastest Gaming Mouse Switch - Chroma RGB Lighting - 8 Programmable Buttons - Rubberized Side Grips - Classic Black",
+    "price": 39,
+    "rate": 4.8,
+    "likes": 0,
+    "catId": 3
+  },
+  {
+    "name": "Razer Basilisk X",
+    "link": "https://www.amazon.com/Razer-Basilisk-HyperSpeed-Wireless-Gaming/dp/B07YPBQSCK/ref=sr_1_4?crid=2SG65IU66N7OR&keywords=razer+mouse&qid=1647029103&sprefix=raz+mouse%2Caps%2C722&sr=8-4",
+    "imgLink": "https://m.media-amazon.com/images/I/81W3s4ZWMXL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Hyperspeed Wireless Gaming Mouse: Bluetooth & Wireless Compatible, 16K DPI Optical Sensor, 6 Programmable Buttons, 450 Hr Battery, Classic Black",
+    "price": 69,
+    "rate": 4.5,
+    "likes": 0,
+    "catId": 3
+  },
+  {
+    "name": "Razer Cynosa Chroma",
+    "link": "https://www.amazon.com/Razer-Cynosa-Chroma-Gaming-Keyboard/dp/B075KMZ4MX/ref=sr_1_8?crid=294FJD71OVEPN&keywords=keyboards&qid=1647029213&sprefix=keyboard%2Caps%2C401&sr=8-8",
+    "imgLink": "https://m.media-amazon.com/images/I/61WgmLgwuQL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Gaming Keyboard: Individually Backlit RGB Keys - Spill-Resistant Design - Programmable Macro Functionality - Quiet & Cushioned",
+    "price": 35,
+    "rate": 4.7,
+    "likes": 0,
+    "catId": 4
+  },
+  {
+    "name": "Womier K87 TKL",
+    "link": "https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_aps_sr_pg1_1?ie=UTF8&adId=A10419353JG5OIPG58L6K&url=%2FWomier-Mechanical-Swappable-Botanical-Laptop-Red%2Fdp%2FB09PY9Z2N3%2Fref%3Dsr_1_12_sspa%3Fcrid%3D294FJD71OVEPN%26keywords%3Dkeyboards%26qid%3D1647029213%26sprefix%3Dkeyboard%252Caps%252C401%26sr%3D8-12-spons%26psc%3D1&qualifier=1647029213&id=4231207186974398&widgetName=sp_mtf",
+    "imgLink": "https://m.media-amazon.com/images/I/61mavXpgAWL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Mechanical Keyboard, Hot Swappable Wired Keyboard, 87 Keys Custom Gaming Keyboard, 80% RGB Keyboard with Botanical Keycaps for PC MAC PS4 Xbox Laptop-Red Switch (Theme Keyboard)",
+    "price": 88,
+    "rate": 4.3,
+    "likes": 0,
+    "catId": 4
+  },
+  {
+    "name": "Razer Huntsman Elite",
+    "link": "https://www.amazon.com/Razer-Huntsman-Elite-Opto-Mechanical-Multi-Functional/dp/B07DHNX18W/ref=sr_1_17?crid=294FJD71OVEPN&keywords=keyboards&qid=1647029280&sprefix=keyboard%2Caps%2C401&sr=8-17",
+    "imgLink": "https://m.media-amazon.com/images/I/81Vtb-0K3-L._AC_UY327_QL65_.jpg",
+    "desc": "Gaming Keyboard: Fastest Keyboard Switches Ever - Clicky Optical Switches - Chroma RGB Lighting - Magnetic Plush Wrist Rest - Dedicated Media Keys & Dial - Classic Black",
+    "price": 139,
+    "rate": 4.8,
+    "likes": 0,
+    "catId": 4
+  },
+  {
+    "name": "Apple Magic Keyboard",
+    "link": "https://www.amazon.com/Apple-Keyboard-Numeric-Computers-Silicon/dp/B09BRDJBRT/ref=sr_1_29?crid=294FJD71OVEPN&keywords=keyboards&qid=1647029322&sprefix=keyboard%2Caps%2C401&sr=8-29",
+    "imgLink": "https://m.media-amazon.com/images/I/71Yw0WfNfML._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "with Touch ID and Numeric Keypad (for Mac Computers with Apple Silicon) - US English - Silver",
+    "price": 299,
+    "rate": 4.6,
+    "likes": 0,
+    "catId": 4
+  },
+  {
+    "name": "Snpurdiri ST-K3 60%",
+    "link": "https://www.amazon.com/Snpurdiri-Keyboard-Ultra-Compact-Waterproof-Business/dp/B08SBG4JG7/ref=sr_1_34?crid=294FJD71OVEPN&keywords=keyboards&qid=1647029322&sprefix=keyboard%2Caps%2C401&sr=8-34",
+    "imgLink": "https://m.media-amazon.com/images/I/71Xk+hR7oTL._AC_UY327_FMwebp_QL65_.jpg",
+    "desc": "Wired Gaming Keyboard, RGB Backlit Ultra-Compact Mini Keyboard, Waterproof Mini Compact 61 Keys Keyboard for PC/Mac Gamer, Typist, Travel, Easy to Carry on Business Trip(Black)",
+    "price": 20,
+    "rate": 2.3,
+    "likes": 0,
+    "catId": 4
+  }
+]

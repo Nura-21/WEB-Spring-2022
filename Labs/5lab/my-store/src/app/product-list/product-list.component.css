@@ -1,0 +1,76 @@
+:host{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* $glass: rgba(255, 255, 255, 0.2);
+$glass-icon: rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(35deg, red, purple);
+$option: #320a28; */
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.list::after {
+  content: "";
+  flex: auto;
+}
+
+.list{
+  margin-left: 3%;
+  width: 95%;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-weight: bold;
+  /* Personalize */
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+      no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left,  #1e2733 3em,  #ffd814 3em);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+
+select option{
+  color: #1e2733;
+  background-color: #ffd814;
+  font-weight: bold;
+}
+
+select:focus{
+  outline: none;
+}
+
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
+}
+
+select::-ms-expand{
+  display: none;
+}
+
+p{
+  font-size: 36px;
+  color: white;
+}

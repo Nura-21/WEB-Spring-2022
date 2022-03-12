@@ -1,0 +1,10 @@
+<div class="option">
+    <select [(ngModel)]="selectedCategory">
+        <option *ngFor="let category of categories" [ngValue]="category">{{category.name}}</option>
+    </select>
+</div>
+<div class="list">
+    <app-product-item *ngFor="let product of getItems()" [product]="product" (remove)="onItemRemove($event)"
+        [catId]="selectedCategory.id"></app-product-item>
+</div>
+
