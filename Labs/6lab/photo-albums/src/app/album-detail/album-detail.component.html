@@ -1,0 +1,19 @@
+<ng-template [ngIf]="loaded">
+  <fieldset>
+    <input type="text" [(ngModel)]="album.title">
+    <button (click)="updateAlbum()"><i class="material-icons">save</i></button>
+  </fieldset>
+
+  <div class="each">
+    <button (click)="returnBack()"><i class="material-icons">arrow_back</i></button>
+    <div class="view" [routerLink]="['/albums', album.id, 'photos']">
+      <i class="material-icons-outlined">remove_red_eye</i>
+      <a>View album's photos</a>
+    </div>
+    
+  </div>
+  
+  
+</ng-template>
+
+<p *ngIf="!loaded">Loading...</p>

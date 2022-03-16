@@ -1,0 +1,84 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+h2 {
+  margin: 10px;
+}
+
+fieldset {
+  display: flex;
+  max-width: 100%;
+  gap: 30px;
+  border: none;
+  background-color: #ffd814;
+}
+
+fieldset input {
+  font-family: inherit;
+  font-size: inherit;
+  width: 90%;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+}
+
+fieldset input:focus{
+  border: none;
+  outline: none;  
+}
+
+fieldset button {
+  border: none;
+  background-color: #1e2733;
+  color: white;
+  font-size: 30px;
+  width: 5%;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.each{
+  background: #354357;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.each a {
+  color: black;
+  text-decoration: none;
+  color: #ffd814;
+}
+
+.each a:hover {
+  text-decoration: underline;
+}
+
+.each button {
+  background-color: #ffd814;
+  color: black;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  user-select: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.view .material-icons-outlined{
+  color: #ffd814;
+}

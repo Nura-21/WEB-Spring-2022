@@ -1,0 +1,68 @@
+header{
+  display: flex;
+  flex-direction: row;
+  background: #1e2733;
+  color: white;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.routers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  height: 100%;
+  width: 10%;
+}
+
+.active{
+  background-color: #ffd814;
+  color: black;
+}
+
+.routers .material-icons-outlined{
+  font-size: 22px;
+}
+
+.routers p{
+  margin: 4px 0 0 0;
+}
+
+footer {
+  background: #1e2733;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+footer .logo .material-icons{
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+footer .logo p{
+  margin: 0;
+  font-size: 14px;
+}
