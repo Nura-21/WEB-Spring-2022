@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Codemode",
+        "description": "IT School",
+        "city": "Almaty",
+        "address": "Almaty"
+    },
+    {
+        "id": 2,
+        "name": "KBTU",
+        "description": "Elite Sharaga",
+        "city": "Almaty",
+        "address": "Almaty"
+    }
+]
