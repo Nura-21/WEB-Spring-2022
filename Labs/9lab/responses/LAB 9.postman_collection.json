@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "11d7c69b-99af-4d16-a8d1-bf21d06604e1",
+		"name": "LAB 9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Companies GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{HOST}}/companies/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"companies",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Company GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/companies/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Companies Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Choco\",\r\n    \"description\" : \"Good company\",\r\n    \"city\" : \"Almaty\",\r\n    \"address\" : \"Almaty\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/companies/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"companies",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\" : \"Very good company\"\r\n}"
+						},
+						"url": {
+							"raw": "{{HOST}}/companies/3/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"companies",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Company",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/companies/3/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"companies",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vacancy",
+			"item": [
+				{
+					"name": "Vacancies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/vacancies",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"vacancies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Vacancy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"BF\",\r\n    \"description\" : \"Not so easy\",\r\n    \"salary\" : \"100000\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/vacancies/1/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"vacancies",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vacancy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/vacancies/12/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"vacancies",
+								"12",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Vacancy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Tutor 8\",\r\n    \"description\" : \"Smth\",\r\n    \"salary\" : \"1000008\",\r\n    \"company\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/vacancies/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"vacancies",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vacancy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/vacancies/1/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"vacancies",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Ten",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/vacancies/top_ten",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"vacancies",
+								"top_ten"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vacancy By Company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/companies/1/vacancies/",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"companies",
+								"1",
+								"vacancies",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
