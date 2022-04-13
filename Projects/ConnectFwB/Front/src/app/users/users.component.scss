@@ -1,0 +1,35 @@
+fieldset {
+    display: flex;
+    max-width: 100%;
+    gap: 30px;
+    border: none;
+
+    input{
+        font-family: inherit;
+        font-size: inherit;
+        width: 90%;
+        border: none;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+    input:focus{
+        border: none;
+        outline: none;  
+    }
+
+    button{
+        border: none;
+        background-color: #1e2733;
+        color: white;
+        font-size: 30px;
+        width: 5%;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+    }
+  }
+
+  ol{
+    margin: 0;
+  }

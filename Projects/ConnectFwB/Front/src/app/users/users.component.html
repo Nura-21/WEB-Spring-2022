@@ -1,0 +1,14 @@
+<p>users works!</p>
+<fieldset>
+    <input type="text" [(ngModel)]="newName" placeholder="Enter new user name">
+</fieldset>
+
+<ol >
+    <li *ngFor="let user of users">
+      <div class="each">
+        <a [routerLink]="['/users/', user.id]">{{user.name}}</a>
+        
+      </div>
+    </li>
+  </ol>
+
