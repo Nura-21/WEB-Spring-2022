@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    background: pink;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        gap: 5px;
+        button{
+            background: white;
+            border: none;
+            height: 3vh;
+            width: 5vw;
+        }
+    }
+}

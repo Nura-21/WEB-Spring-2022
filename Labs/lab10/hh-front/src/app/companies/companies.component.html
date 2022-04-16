@@ -1,0 +1,15 @@
+<fieldset>
+    <input type="text" [(ngModel)]="newName" placeholder="Enter new company name">
+    <input type="text" [(ngModel)]="newDesc" placeholder="Enter new company description">
+    <input type="text" [(ngModel)]="newCity" placeholder="Enter new company city">
+    <input type="text" [(ngModel)]="newAddress" placeholder="Enter new company address">
+    <button (click)="addCompany()">+</button>
+  </fieldset>
+<ul>
+    <li *ngFor="let each of companies">
+        <div class="i" [routerLink]="['/companies/',each.id]">
+            <p >Name: {{each.name}}</p>
+            <p>City: {{each.city}}</p>
+        </div>
+    </li>
+</ul>
