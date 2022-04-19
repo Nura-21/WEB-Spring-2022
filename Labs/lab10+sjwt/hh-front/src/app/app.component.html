@@ -1,0 +1,15 @@
+<header>
+  <h1>Head Hunter</h1>
+  <div>
+    <p *ngIf="!logged">Username: <input type="text" [(ngModel)]="username"></p>
+    <p *ngIf="!logged">Password: <input type="text" [(ngModel)]="password"></p>
+    <button *ngIf="!logged" (click)="login()">Login</button>
+    <button *ngIf="logged" (click)="logout()">Logout</button>
+  </div>
+</header>
+
+<p *ngIf="!logged">Companies: </p>
+<p *ngIf="!logged">To see companies and vacancies you should login</p>
+<div *ngIf="logged">
+  <router-outlet></router-outlet>
+</div>

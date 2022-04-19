@@ -1,0 +1,20 @@
+<button (click)="back()">Back</button>
+<ng-template [ngIf]="loaded">
+    <div class="info">
+        <p>Name: {{company.name}} </p> 
+        <p>Description: {{company.description}}</p>
+        <p>City: {{company.city}}</p>
+        <p>Adress: {{company.address}}</p>
+    </div>
+    
+    <div class="list">
+        <ul>
+            <li *ngFor="let each of vacancies">
+                <p >Name: {{each.name}}</p>
+                <p>Description: {{each.description}}</p>
+                <p>Salary: {{each.salary | currency}}</p>
+            </li>
+        </ul>
+    </div>
+</ng-template>
+<p *ngIf="!loaded">Loading...</p>
